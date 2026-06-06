@@ -36,7 +36,7 @@ To address this issue, we propose **CCVL**, a compact commonality–variation le
 ## Framework
 
 <p align="center">
-  <img src="CCVL_framework.png" width="95%">
+  <img src="CCVL_framework.jpg" width="95%">
 </p>
 
 **Overall architecture of CCVL.**  
