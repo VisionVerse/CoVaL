@@ -200,18 +200,7 @@ More detailed comparisons and ablation studies can be found in the paper.
 
 CCVL produces accurate and structurally consistent change maps, especially in challenging cases with complex backgrounds, small changed regions, and blurred boundaries.
 
----
 
-## Ablation Study
-
-| Method | LCVD | VPL | ESE | F1 | IoU |
-|---|:---:|:---:|:---:|---:|---:|
-| Baseline |  |  |  | - | - |
-| + LCVD | ✓ |  |  | - | - |
-| + LCVD + VPL | ✓ | ✓ |  | - | - |
-| Full CCVL | ✓ | ✓ | ✓ | - | - |
-
----
 
 ## Repository Structure
 
@@ -233,35 +222,9 @@ CCVL/
 └── README.md
 ```
 
----
-
-## Citation
-
-If you find this repository useful, please cite our paper:
-
-```bibtex
-@article{ccvl2025,
-  title={From Disentanglement to Localization: Compact Commonality--Variation Learning for Remote Sensing Change Detection},
-  author={Author One and Author Two and Author Three},
-  journal={IEEE Transactions on Geoscience and Remote Sensing},
-  year={2025}
-}
-```
-
----
 
 ## Acknowledgement
 
 This project is built upon several excellent open-source repositories and remote sensing change detection benchmarks. We sincerely thank the authors for their contributions.
 
----
 
-## Contact
-
-For questions or discussions, please contact:
-
-```text
-Your Name: your_email@example.com
-```
-
-or open an issue in this repository.
