@@ -1,5 +1,18 @@
 # CCVL: Compact Commonality–Variation Learning for Remote Sensing Change Detection
 
+
+<p align="center">
+    <a href="">  <img src="https://img.shields.io/badge/Python-3.8+-blue" alt="Python"> </a>
+  <a href="">
+    <img src="https://img.shields.io/badge/Code-PyTorch-orange" alt="Code">
+  </a>
+    <a href="">  <img src="https://img.shields.io/badge/Dataset-LEVIR--CD%20%7C%20WHU--CD%20%7C-yellow" alt="Dataset">   </a>
+    <a href="">
+    <img src="https://img.shields.io/badge/Backbone-VMamba-cyan" alt="Backbone">
+  </a>
+    </p>
+    
+
 This repository provides the official implementation of:
 
 **From Disentanglement to Localization: Compact Commonality–Variation Learning for Remote Sensing Change Detection**
