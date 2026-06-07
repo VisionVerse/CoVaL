@@ -9,9 +9,7 @@
     </p>
     
 
-This repository provides the official implementation of:
-
-**From Disentanglement to Localization: Compact Commonality–Variation Learning for Remote Sensing Change Detection**
+This repository provides the official implementation of: **From Disentanglement to Localization: Compact Commonality–Variation Learning for Remote Sensing Change Detection.**
 
 CCVL is a remote sensing change detection framework that follows a two-stage paradigm:
 
