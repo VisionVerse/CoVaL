@@ -15,20 +15,14 @@ CCVL is a remote sensing change detection framework that follows a two-stage par
 
 > **What changes?** → **Where changes occur?**
 
-It first decouples bi-temporal features into commonality and variation representations, and then progressively localizes changed regions using variation-driven spatial reasoning.
+CCVL decouples bi-temporal features into commonality and variation representations, and then progressively localizes changed regions using variation-driven spatial reasoning.
 
----
+<p align="center">
+  <img src="CCVL_framework.jpg" width="95%">
+</p>
 
-## News
-
-- Code and pretrained models will be released soon.
-- The paper is currently under review.
-
----
-
-## Overview
-
-Remote sensing change detection aims to identify changed regions between two images captured at different times. Existing methods often directly fuse or subtract bi-temporal features, which may entangle invariant background information with change-related variations and introduce redundant responses.
+Remote sensing change detection aims to identify changed regions between two images captured at different times. 
+Existing methods often directly fuse or subtract bi-temporal features, which may entangle invariant background information with change-related variations and introduce redundant responses.
 
 To address this issue, we propose **CCVL**, a compact commonality–variation learning framework.
 
@@ -40,35 +34,14 @@ To address this issue, we propose **CCVL**, a compact commonality–variation le
 
 ---
 
-## Framework
+## News
 
-<p align="center">
-  <img src="CCVL_framework.jpg" width="95%">
-</p>
-
-**Overall architecture of CCVL.**  
-Given two bi-temporal remote sensing images, a shared VMamba encoder extracts multi-scale paired features. LCVD decouples them into commonality features and variation features. VPL progressively localizes changed regions, while the edge-injected spatial enhancement branch provides boundary guidance.
+- Code and pretrained models will be released soon.
+- The paper is currently under review.
 
 ---
 
-## Highlights
 
-- **Compact Commonality–Variation Learning**  
-  Explicitly separates invariant commonality and change-related variation from mixed bi-temporal features.
-
-- **Low-redundancy Feature Decoupling**  
-  Projects features into a compact subspace to reduce redundant and irrelevant responses.
-
-- **Variation-guided Progressive Localization**  
-  Treats variation features as change candidates and progressively recovers spatial details from deep to shallow layers.
-
-- **Edge-aware Boundary Refinement**  
-  Introduces edge priors to improve boundary accuracy and structural consistency.
-
-- **Efficient Long-range Modeling**  
-  Uses VMamba as the backbone to capture long-range dependencies with efficient visual representation learning.
-
----
 
 ## Installation
 
@@ -94,7 +67,7 @@ scikit-learn
 matplotlib
 ```
 
----
+
 
 ## Dataset Preparation
 
@@ -149,7 +122,6 @@ Or run:
 bash scripts/train_levir.sh
 ```
 
----
 
 ## Testing
 
