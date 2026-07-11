@@ -1,4 +1,4 @@
-# CCVL: Compact Commonality–Variation Learning for Remote Sensing Change Detection
+# CoVaL: Compact Commonality–Variation Learning for Remote Sensing Change Detection
 
 
 <p align="center">
