@@ -1,0 +1,44 @@
+MODEL:
+  TYPE: vssm
+  NAME: vssm1_tiny_0230
+  DROP_PATH_RATE: 0.2
+  NUM_CLASSES: 2
+  VSSM:
+    EMBED_DIM: 96
+    DEPTHS: [ 2, 2, 4, 2 ]
+    SSM_D_STATE: 1
+    SSM_DT_RANK: "auto"
+    SSM_RATIO: 2.0
+    SSM_RANK_RATIO: 2.0
+    SSM_CONV: 3
+    SSM_CONV_BIAS: false
+    SSM_FORWARDTYPE: "v3noz"
+    SSM_ACT_LAYER: "silu"
+    SSM_DROP_RATE: 0.0
+    SSM_INIT: "v0"
+    MLP_RATIO: 4.0
+    MLP_ACT_LAYER: "gelu"
+    MLP_DROP_RATE: 0.0
+    GMLP: false
+    DOWNSAMPLE: "v3"
+    PATCHEMBED: "v2"
+    PATCH_SIZE: 4
+    PATCH_NORM: true
+    NORM_LAYER: "ln2d"
+    IN_CHANS: 3
+
+TRAIN:
+  EPOCHS: 100
+  WARMUP_EPOCHS: 5
+  BASE_LR: 1e-4
+  WARMUP_LR: 1e-6
+  MIN_LR: 1e-6
+  WEIGHT_DECAY: 0.05
+  LR_SCHEDULER:
+    NAME: 'cosine'
+  USE_CHECKPOINT: false
+
+DATA:
+  BATCH_SIZE: 8
+  NUM_WORKERS: 8
+  PIN_MEMORY: true
