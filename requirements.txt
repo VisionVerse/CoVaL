@@ -1,0 +1,38 @@
+# CoVaL - Python Dependencies
+# Install: pip install -r requirements.txt
+# Note:
+# 1. Install PyTorch / torchvision matching your CUDA version first.
+# 2. Then install remaining dependencies via this file.
+# 3. classification directory analysis dependencies are optional.
+
+# =========================================================
+# Core deep learning
+# =========================================================
+torch>=2.0.0
+torchvision>=0.15.0
+
+# =========================================================
+# Model / config / training
+# =========================================================
+timm>=0.9.0
+yacs>=0.1.8
+PyYAML>=6.0
+einops>=0.6.0
+tqdm>=4.65.0
+numpy>=1.24.0
+scipy>=1.10.0
+packaging>=23.0
+ninja>=1.11.0
+
+# =========================================================
+# Data IO / image processing
+# =========================================================
+imageio>=2.31.0
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# =========================================================
+# Optional analysis / visualization
+# =========================================================
+matplotlib>=3.7.0
+fvcore>=0.1.5.post20221221
