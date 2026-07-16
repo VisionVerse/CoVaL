@@ -2,11 +2,11 @@
 
 
 <p align="center">
-   <img src="https://img.shields.io/badge/Python-3.8+-blue" alt="Python"> 
-    <img src="https://img.shields.io/badge/Code-PyTorch-orange" alt="Code">
-    <img src="https://img.shields.io/badge/Dataset-LEVIR--CD%20%7C%20SYSU--CD%20%7C%20WHU--CD%20%7C%20CDD--CD-yellow" alt="Dataset">
-    <img src="https://img.shields.io/badge/Backbone-VMamba-cyan" alt="Backbone">
-    </p>
+  <img src="https://img.shields.io/badge/Python-3.8+-blue" alt="Python">
+  <img src="https://img.shields.io/badge/Code-PyTorch-orange" alt="Code">
+  <img src="https://img.shields.io/badge/Dataset-LEVIR--CD%20%7C%20SYSU--CD%20%7C%20WHU--CD%20%7C%20CDD--CD-yellow" alt="Dataset">
+  <img src="https://img.shields.io/badge/Backbone-VMamba-cyan" alt="Backbone">
+</p>
     
 
 This repository provides the official implementation of: **From Disentanglement to Localization: Compact Commonality–Variation Learning for Remote Sensing Change Detection.**
@@ -36,7 +36,7 @@ To address this issue, we propose **CoVaL**, a compact commonality–variation l
 
 ## News
 
-- Code and pretrained models will be released soon.
+- Code released.
 - The paper is currently under review.
 
 ---
@@ -66,8 +66,6 @@ timm
 scikit-learn
 matplotlib
 ```
-
-
 
 ## Dataset Preparation
 
@@ -159,8 +157,6 @@ results/
     ├── change_map/
     └── summary_metrics.txt
 ```
-
----
 
 ---
 
