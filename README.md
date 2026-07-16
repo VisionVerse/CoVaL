@@ -34,12 +34,7 @@ To address this issue, we propose **CoVaL**, a compact commonality–variation l
 
 ---
 
-## News
 
-- Code released.
-- The paper is currently under review.
-
----
 
 
 
