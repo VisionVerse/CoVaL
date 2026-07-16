@@ -34,7 +34,12 @@ To address this issue, we propose **CoVaL**, a compact commonality–variation l
 
 ---
 
+## News
 
+- Code released.
+- The paper is currently under review.
+
+---
 
 
 
@@ -263,9 +268,7 @@ CoVaL/
 │   └── lovasz_loss.py
 ├── utils/
 │   ├── metrics.py
-│   ├── eval_segm.py
-│   ├── post_processing.py
-│   └── mcd_utils.py
+│   └── post_processing.py
 ├── assets/
 │   └── images/
 │       ├── CoVaL_framework.jpg
