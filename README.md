@@ -108,7 +108,7 @@ Key parameters:
 | `--pretrained_weight_path` | '' | VMamba pretrained weight |
 
 
-## :bar_chart:  Testing
+## :mega:  Testing
 
 ```bash
 python test.py \
@@ -144,7 +144,7 @@ results/
 
 ---
 
-## Results
+## :chart_with_upwards_trend: Results
 
 t-SNE results across four datasets show that CoVaL separates entangled bi-temporal features into compact commonality and variation clusters, enabling more discriminative change representation.
 <p align="center">
