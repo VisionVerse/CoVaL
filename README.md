@@ -1,4 +1,4 @@
-# CoVaL: Compact Commonality–Variation Learning for Remote Sensing Change Detection
+# Disentangle-to-Localize: Commonality-Variation Learning for Remote Sensing Change Detection
 
 
 <p align="center">
@@ -9,7 +9,7 @@
 </p>
     
 
-This repository provides the official implementation of: **From Disentanglement to Localization: Compact Commonality–Variation Learning for Remote Sensing Change Detection.**
+This repository provides the official implementation of: **Disentangle-to-Localize: Commonality-Variation Learning for Remote Sensing Change Detection.**
 
 CoVaL is a remote sensing change detection framework that follows a two-stage paradigm:
 
