@@ -38,70 +38,9 @@ To address this issue, we propose **CoVaL**, a compact commonality–variation l
 
 ---
 
-## News
-
-- Code released.
-- The paper is currently under review.
-
----
 
 
-
-## Installation
-
-### 1. Create conda environment
-
-```bash
-conda create -n coval python=3.10 pip -y
-conda activate coval
-```
-
-### 2. Install PyTorch with CUDA (via pip)
-
-> Do NOT use conda to install PyTorch — conda may pull incompatible MKL/OpenMP dependencies.
-> Use the pip CUDA wheel directly.
-
-```bash
-# CUDA 12.1
-pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu121
-
-# Or CUDA 11.8
-pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu118
-```
-
-### 3. Compile selective scan kernels
-
-The VMamba backbone requires compiled CUDA kernels for the Mamba selective scan operator.
-Install via pip from the network, or build locally from source if the network install fails.
-
-**Option A — Install from PyPI (recommended):**
-
-```bash
-pip install selective-scan==0.0.2
-```
-
-**Option B — Build from source if Option A fails:**
-
-```bash
-cd kernels/selective_scan
-pip install .
-cd ../..
-```
-
-Verify the install:
-
-```bash
-python -c "import selective_scan_cuda_core, selective_scan_cuda_oflex, selective_scan_cuda_ndstate; print('OK')"
-```
-
-### 4. Install remaining dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### TL;DR
-
+## :pushpin:  Installation
 ```bash
 conda create -n coval python=3.10 pip -y
 conda activate coval
@@ -110,9 +49,7 @@ pip install selective-scan==0.0.2
 pip install -r requirements.txt
 ```
 
----
-
-## Pretrained Weight
+### Pretrained Weight
 
 The VMamba Tiny backbone weight (`vssm_tiny_0230_ckpt_epoch_262.pth`, 118 MB) is not included due to GitHub file size limits.
 
@@ -126,9 +63,8 @@ pretrained_weight/
 └── vssm_tiny_0230_ckpt_epoch_262.pth
 ```
 
----
 
-## Dataset Preparation
+## :open_file_folder: Dataset Preparation
 
 Each dataset follows a unified `A/B/label/list` structure:
 
@@ -150,20 +86,9 @@ dataset/
 
 The data loader supports flexible matching: a filename `train_001` in the list matches `train_001.png`, `train_001.jpg`, `001.png`, etc.
 
-Evaluated datasets:
-
-| Dataset | `--dataset` | Format | Samples | Train/Val/Test |
-|---------|------------|--------|---------|----------------|
-| LEVIR-CD | `LEVIR-CD` | `.png` | 10,192 | 7,120 / 1,024 / 2,048 |
-| SYSU-CD | `SYSU-CD` | `.png` | 20,000 | 12,000 / 4,000 / 4,000 |
-| WHU-CD | `WHU-CD` | `.png` | 7,434 | 5,947 / 743 / 744 |
-| CDD-CD | `CDD-CD` | `.jpg` | 15,998 | 10,000 / 2,998 / 3,000 |
-
-> CDD-CD uses `.jpg` format; the other three datasets use `.png`.
-
 ---
 
-## Training
+## :hourglass_flowing_sand: Training
 
 ```bash
 python train.py \
@@ -185,7 +110,7 @@ Key parameters:
 | `--pretrained_weight_path` | '' | VMamba pretrained weight |
 
 
-## Testing
+## :bar_chart:  Testing
 
 ```bash
 python test.py \
