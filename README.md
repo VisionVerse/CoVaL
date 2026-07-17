@@ -21,8 +21,11 @@ CoVaL decouples bi-temporal features into commonality and variation representati
   <img src="assets/images/CoVaL_framework.jpg" width="95%">
 </p>
 
-Remote sensing change detection aims to identify changed regions between two images captured at different times. 
-Existing methods often directly fuse or subtract bi-temporal features, which may entangle invariant background information with change-related variations and introduce redundant responses.
+Remote sensing change detection (RSCD) aims to identify genuine land-cover changes from bi-temporal images.
+However, discrepancies caused by illumination, seasonality, weather, and atmospheric conditions may resemble real changes and produce pseudo-change responses.
+Existing methods typically fuse or difference bi-temporal features directly, leaving temporally shared content, genuine change cues, and nuisance-induced discrepancies highly entangled. 
+Consequently, distinguishing true changes from pseudo changes remains a fundamental challenge.
+
 
 To address this issue, we propose **CoVaL**, a compact commonality–variation learning framework.
 
