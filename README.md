@@ -168,7 +168,6 @@ CoVaL/
 ├── 🐍 train.py
 ├── 🐍 test.py
 ├── 📄 requirements.txt
-├── 📄 .gitignore
 ├── 📋 LICENSE
 ├── 📁 configs/
 │   ├── config.py
@@ -199,7 +198,6 @@ CoVaL/
 ├── 📁 kernels/
 │   └── 📁 selective_scan/            # CUDA kernels
 ├── 📁 pretrained_weight/
-└── 📁 docs/
 ```
 
 
