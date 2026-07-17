@@ -108,7 +108,7 @@ Key parameters:
 | `--pretrained_weight_path` | '' | VMamba pretrained weight |
 
 
-## :mag_right:  Testing
+## :mega:  Testing
 
 ```bash
 python test.py \
@@ -161,44 +161,45 @@ CoVaL produces accurate and structurally consistent change maps, especially in c
 </p>
 
 
-## Repository Structure
+## 📁 Repository Structure
 
-```text
+```
 CoVaL/
-├── train.py                          # Training entry point
-├── test.py                           # Inference entry point
-├── requirements.txt
-├── .gitignore
-├── configs/
+├── 🐍 train.py
+├── 🐍 test.py
+├── 📄 requirements.txt
+├── 📄 .gitignore
+├── 📋 LICENSE
+├── 📁 configs/
 │   ├── config.py
 │   └── vssm_tiny_224.yaml
-├── datasets/
+├── 📁 datasets/
 │   ├── imutils.py
 │   └── make_data_loader.py
-├── models/
+├── 📁 models/
 │   ├── coval.py                      # CoVaLModel (main)
 │   ├── lcvd.py                       # Stage I: CSP + FCD
 │   ├── vpl.py                        # Stage II: CVA + CLR + ESE
-│   └── backbone/
+│   └── 📁 backbone/
 │       ├── coval_backbone.py         # CoVaLBackbone
 │       ├── vmamba.py                 # VSSM / SS2D
 │       └── csm_triton.py             # Triton cross-scan
-├── losses/
+├── 📁 losses/
 │   ├── edge_loss.py
 │   └── lovasz_loss.py
-├── utils/
+├── 📁 utils/
 │   ├── metrics.py
 │   └── post_processing.py
-├── assets/
-│   └── images/
+├── 📁 assets/
+│   └── 📁 images/
 │       ├── CoVaL_framework.jpg
+│       ├── tsne_all.jpg
 │       ├── Visualization_Result_1.jpg
 │       └── Visualization_Result_2.jpg
-├── kernels/
-│   └── selective_scan/               # CUDA kernels
-├── classification/                    # VMamba reference
-├── pretrained_weight/
-└── docs/
+├── 📁 kernels/
+│   └── 📁 selective_scan/            # CUDA kernels
+├── 📁 pretrained_weight/
+└── 📁 docs/
 ```
 
 
@@ -207,5 +208,3 @@ CoVaL/
 ## Acknowledgement
 
 This project is built upon several excellent open-source repositories and remote sensing change detection benchmarks. We sincerely thank the authors for their contributions.
-
-
