@@ -11,8 +11,6 @@
 
 This repository provides the official implementation of: **Disentangle-to-Localize: Commonality-Variation Learning for Remote Sensing Change Detection.**
 
-CoVaL is a remote sensing change detection framework that follows a two-stage paradigm:
-
 > **What changes?** → **Where changes occur?**
 
 CoVaL decouples bi-temporal features into commonality and variation representations, and then progressively localizes changed regions using variation-driven spatial reasoning.
@@ -23,7 +21,7 @@ CoVaL decouples bi-temporal features into commonality and variation representati
 
 ## ✨ Overview
 Remote sensing change detection (RSCD) aims to identify genuine land-cover changes from bi-temporal images.
-However, discrepancies caused by illumination, seasonality, weather, and atmospheric conditions may resemble real changes and produce pseudo-change responses.
+However, discrepancies caused by illumination, seasonality, weather, and atmospheric conditions may resemble real changes and produce **pseudo-change responses**.
 Existing methods typically fuse or difference bi-temporal features directly, leaving temporally shared content, genuine change cues, and nuisance-induced discrepancies highly entangled. 
 Consequently, distinguishing true changes from pseudo changes remains a fundamental challenge.
 
@@ -148,26 +146,19 @@ results/
 
 ## Results
 
-| Dataset | OA | F1 | IoU | Kappa |
-|---|---:|---:|---:|---:|
-| LEVIR-CD | 99.20 | 92.08 | 85.33 | 91.66 |
-| SYSU-CD | 92.56 | 84.46 | 73.11 | 79.57 |
-| WHU-CD | 99.62 | 95.12 | 90.69 | 94.92 |
-| CDD-CD | 99.26 | 96.87 | 93.93 | 96.45 |
+t-SNE results across four datasets show that CoVaL separates entangled bi-temporal features into compact commonality and variation clusters, enabling more discriminative change representation.
+<p align="center">
+  <img src="assets/images/tsne_all.jpg" width="95%">
+</p>
 
-More detailed comparisons and ablation studies can be found in the paper.
 
----
 
-## Visualization
+CoVaL produces accurate and structurally consistent change maps, especially in challenging cases with complex backgrounds, small changed regions, and blurred boundaries.
 
 <p align="center">
   <img src="assets/images/Visualization_Result_1.jpg" width="95%">
   <img src="assets/images/Visualization_Result_2.jpg" width="95%">
 </p>
-
-CoVaL produces accurate and structurally consistent change maps, especially in challenging cases with complex backgrounds, small changed regions, and blurred boundaries.
-
 
 
 ## Repository Structure
@@ -209,6 +200,8 @@ CoVaL/
 ├── pretrained_weight/
 └── docs/
 ```
+
+
 
 
 ## Acknowledgement
