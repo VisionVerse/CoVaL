@@ -154,12 +154,12 @@ Evaluated datasets:
 
 | Dataset | `--dataset` | Format | Samples | Train/Val/Test |
 |---------|------------|--------|---------|----------------|
-| LEVIR-CD-256 | `LEVIR-CD-256` | `.png` | 10,192 | 7,120 / 1,024 / 2,048 |
-| SYSU-CD-256 | `SYSU-CD-256` | `.png` | 20,000 | 12,000 / 4,000 / 4,000 |
-| WHU-CD-256 | `WHU-CD-256` | `.png` | 7,434 | 5,947 / 743 / 744 |
-| CDD-CD-256 | `CDD-CD-256` | `.jpg` | 15,998 | 10,000 / 2,998 / 3,000 |
+| LEVIR-CD | `LEVIR-CD` | `.png` | 10,192 | 7,120 / 1,024 / 2,048 |
+| SYSU-CD | `SYSU-CD` | `.png` | 20,000 | 12,000 / 4,000 / 4,000 |
+| WHU-CD | `WHU-CD` | `.png` | 7,434 | 5,947 / 743 / 744 |
+| CDD-CD | `CDD-CD` | `.jpg` | 15,998 | 10,000 / 2,998 / 3,000 |
 
-> CDD-CD-256 uses `.jpg` format; the other three datasets use `.png`.
+> CDD-CD uses `.jpg` format; the other three datasets use `.png`.
 
 ---
 
@@ -169,7 +169,7 @@ Evaluated datasets:
 python train.py \
   --cfg configs/vssm_tiny_224.yaml \
   --dataset_path /path/to/dataset \
-  --dataset LEVIR-CD-256 \
+  --dataset LEVIR-CD \
   --pretrained_weight_path pretrained_weight/vssm_tiny_0230_ckpt_epoch_262.pth
 ```
 
@@ -179,7 +179,7 @@ Key parameters:
 |-----------|---------|-------------|
 | `--cfg` | required | YAML config path |
 | `--dataset_path` | required | Dataset root directory |
-| `--dataset` | LEVIR-CD-256 | Dataset name |
+| `--dataset` | LEVIR-CD | Dataset name |
 | `--batch_size` | 12 | Batch size per GPU |
 | `--max_iters` | 50000 | Training iterations |
 | `--pretrained_weight_path` | '' | VMamba pretrained weight |
@@ -193,7 +193,7 @@ python test.py \
   --test_dataset_path /path/to/dataset \
   --test_data_list_path /path/to/dataset/list/test.txt \
   --resume saved_models/CoVaL_run/best_model_f1_xxxx.pth \
-  --dataset LEVIR-CD-256 \
+  --dataset LEVIR-CD \
   --batch_size 1
 ```
 
@@ -205,7 +205,7 @@ python test.py \
   --test_dataset_path /path/to/dataset \
   --test_data_list_path /path/to/dataset/list/test.txt \
   --resume saved_models/CoVaL_run/best_model_f1_xxxx.pth \
-  --dataset LEVIR-CD-256 \
+  --dataset LEVIR-CD \
   --use_post_processing \
   --post_min_area 50
 ```
@@ -225,10 +225,10 @@ results/
 
 | Dataset | OA | F1 | IoU | Kappa |
 |---|---:|---:|---:|---:|
-| LEVIR-CD-256 | 99.20 | 92.08 | 85.33 | 91.66 |
-| SYSU-CD-256 | 92.56 | 84.46 | 73.11 | 79.57 |
-| WHU-CD-256 | 99.62 | 95.12 | 90.69 | 94.92 |
-| CDD-CD-256 | 99.26 | 96.87 | 93.93 | 96.45 |
+| LEVIR-CD | 99.20 | 92.08 | 85.33 | 91.66 |
+| SYSU-CD | 92.56 | 84.46 | 73.11 | 79.57 |
+| WHU-CD | 99.62 | 95.12 | 90.69 | 94.92 |
+| CDD-CD | 99.26 | 96.87 | 93.93 | 96.45 |
 
 More detailed comparisons and ablation studies can be found in the paper.
 
