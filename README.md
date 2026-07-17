@@ -3,7 +3,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8+-blue" alt="Python">
-  <img src="https://img.shields.io/badge/Code-PyTorch-2.5-orange" alt="Code">
+  <img src="https://img.shields.io/badge/PyTorch-2.5-orange" alt="Code">
   <img src="https://img.shields.io/badge/Backbone-VMamba-cyan" alt="Backbone">
   <img src="https://img.shields.io/badge/Dataset-LEVIR--CD%20%7C%20SYSU--CD%20%7C%20WHU--CD%20%7C%20CDD--CD-yellow" alt="Dataset">
 </p>
