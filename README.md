@@ -108,7 +108,7 @@ Key parameters:
 | `--pretrained_weight_path` | '' | VMamba pretrained weight |
 
 
-## :mega:  Testing
+## :bar_chart:  Testing
 
 ```bash
 python test.py \
