@@ -203,6 +203,6 @@ CoVaL/
 
 
 
-## Acknowledgement
+## :clap: Acknowledgement
 
-This project is built upon several excellent open-source repositories and remote sensing change detection benchmarks. We sincerely thank the authors for their contributions.
+This project is built upon several excellent open-source repositories and remote sensing change detection benchmarks. We sincerely thank the authors for their contributions :clap::clap::clap:.
