@@ -16,7 +16,7 @@ This repository provides the official implementation of: **Disentangle-to-Locali
 CoVaL decouples bi-temporal features into commonality and variation representations, and then progressively localizes changed regions using variation-driven spatial reasoning.
 
 <p align="center">
-  <img src="assets/images/CoVaL_framework.jpg" width="95%">
+  <img src="assets/images/framework.jpg" width="95%">
 </p>
 
 ## :sparkles: Overview
