@@ -19,7 +19,7 @@ CoVaL decouples bi-temporal features into commonality and variation representati
   <img src="assets/images/CoVaL_framework.jpg" width="95%">
 </p>
 
-## ✨ Overview
+## :sparkles: Overview
 Remote sensing change detection (RSCD) aims to identify genuine land-cover changes from bi-temporal images.
 However, discrepancies caused by illumination, seasonality, weather, and atmospheric conditions may resemble real changes and produce **pseudo-change responses**.
 Existing methods typically fuse or difference bi-temporal features directly, leaving temporally shared content, genuine change cues, and nuisance-induced discrepancies highly entangled. 
