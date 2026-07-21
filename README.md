@@ -146,14 +146,15 @@ results/
 
 ## :chart_with_upwards_trend: Results
 
-t-SNE results across four datasets show that CoVaL separates entangled bi-temporal features into compact commonality and variation clusters, enabling more discriminative change representation.
+
+- t-SNE results across four datasets show that CoVaL separates entangled bi-temporal features (first row) into compact commonality and variation clusters (second row), enabling more discriminative change representation. :point_down:
 <p align="center">
   <img src="assets/images/tsne_all.jpg" width="95%">
 </p>
 
 
 
-CoVaL produces accurate and structurally consistent change maps, especially in challenging cases with complex backgrounds, small changed regions, and blurred boundaries.
+- CoVaL produces accurate and structurally consistent change maps, especially in challenging cases with complex backgrounds, small changed regions, and blurred boundaries. :point_down:
 
 <p align="center">
   <img src="assets/images/Visualization_Result_1.jpg" width="95%">
